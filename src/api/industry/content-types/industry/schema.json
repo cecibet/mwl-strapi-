@@ -1,0 +1,72 @@
+{
+  "kind": "collectionType",
+  "collectionName": "industries",
+  "info": {
+    "singularName": "industry",
+    "pluralName": "industries",
+    "displayName": "Industry"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "hero_image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "intro_text": {
+      "type": "richtext"
+    },
+    "popular_analyses": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.bullet-item"
+    },
+    "analysis_packages": {
+      "type": "component",
+      "repeatable": true,
+      "component": "industry.analysis-package"
+    },
+    "submittal_forms": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.file-link"
+    },
+    "guides_resources": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.file-link"
+    },
+    "contact_cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.contact-cta"
+    },
+    "sample_amount_notes": {
+      "type": "richtext"
+    },
+    "shipping_address": {
+      "type": "text"
+    },
+    "catalog_url": {
+      "type": "string"
+    },
+    "seo_title": {
+      "type": "string"
+    },
+    "seo_description": {
+      "type": "text"
+    }
+  }
+}

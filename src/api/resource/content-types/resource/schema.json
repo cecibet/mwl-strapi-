@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "resources",
+  "info": {
+    "singularName": "resource",
+    "pluralName": "resources",
+    "displayName": "Resource"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "file": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["files", "images"]
+    },
+    "external_url": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "resource_type": {
+      "type": "enumeration",
+      "enum": ["submittal_form", "guide", "permit"]
+    },
+    "related_industries": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::industry.industry"
+    }
+  }
+}

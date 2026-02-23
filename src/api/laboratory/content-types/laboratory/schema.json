@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "laboratories",
+  "info": {
+    "singularName": "laboratory",
+    "pluralName": "laboratories",
+    "displayName": "Laboratory"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "hero_image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "services_offered": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.bullet-item"
+    },
+    "who_we_support": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.bullet-item"
+    },
+    "highlights": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.bullet-item"
+    },
+    "related_industries": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::industry.industry"
+    }
+  }
+}

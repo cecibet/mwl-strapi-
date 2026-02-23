@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "team_members",
+  "info": {
+    "singularName": "team-member",
+    "pluralName": "team-members",
+    "displayName": "Team Member"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string"
+    },
+    "photo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "linkedin_url": {
+      "type": "string"
+    },
+    "is_founder": {
+      "type": "boolean",
+      "default": false
+    },
+    "bio": {
+      "type": "richtext"
+    },
+    "sort_order": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

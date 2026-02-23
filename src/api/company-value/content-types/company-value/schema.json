@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "company_values",
+  "info": {
+    "singularName": "company-value",
+    "pluralName": "company-values",
+    "displayName": "Company Value"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images", "files"]
+    },
+    "sort_order": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "get_started_steps",
+  "info": {
+    "singularName": "get-started-step",
+    "pluralName": "get-started-steps",
+    "displayName": "Get Started Step"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "step_number": {
+      "type": "integer",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "cta_label": {
+      "type": "string"
+    },
+    "cta_url": {
+      "type": "string"
+    }
+  }
+}

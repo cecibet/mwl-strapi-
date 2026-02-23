@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_industry_analysis_packages",
+  "info": {
+    "displayName": "Analysis Package",
+    "icon": "flask"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "price_without_rec": {
+      "type": "string"
+    },
+    "price_with_rec": {
+      "type": "string"
+    },
+    "turnaround_time": {
+      "type": "string"
+    },
+    "analyses": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.bullet-item"
+    }
+  }
+}

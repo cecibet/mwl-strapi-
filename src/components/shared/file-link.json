@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_shared_file_links",
+  "info": {
+    "displayName": "File Link",
+    "icon": "file-pdf"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "file": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["files", "images"]
+    },
+    "external_url": {
+      "type": "string"
+    }
+  }
+}

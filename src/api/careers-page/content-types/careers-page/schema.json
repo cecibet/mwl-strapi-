@@ -1,0 +1,45 @@
+{
+  "kind": "singleType",
+  "collectionName": "careers_page",
+  "info": {
+    "singularName": "careers-page",
+    "pluralName": "careers-pages",
+    "displayName": "Careers Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero_image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "mission_text": {
+      "type": "richtext"
+    },
+    "vision_text": {
+      "type": "richtext"
+    },
+    "values_intro": {
+      "type": "text"
+    },
+    "benefits_intro": {
+      "type": "text"
+    },
+    "jobs_external_url": {
+      "type": "string"
+    },
+    "values": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::company-value.company-value"
+    },
+    "benefits": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::benefit.benefit"
+    }
+  }
+}
