@@ -1,0 +1,33 @@
+{
+  "kind": "singleType",
+  "collectionName": "catalog",
+  "info": {
+    "singularName": "catalog",
+    "pluralName": "catalogs",
+    "displayName": "Catalog",
+    "description": "The main analytical services catalog PDF"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "pdf_file": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["files"]
+    },
+    "version_label": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "cover_image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}
