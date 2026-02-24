@@ -604,6 +604,38 @@ export interface ApiCareersPageCareersPage extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiCatalogCatalog extends Struct.SingleTypeSchema {
+  collectionName: 'catalog';
+  info: {
+    displayName: 'Catalog';
+    pluralName: 'catalogs';
+    singularName: 'catalog';
+    description: 'The main analytical services catalog PDF';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    cover_image: Schema.Attribute.Media<'images'>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    description: Schema.Attribute.Text;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::catalog.catalog'
+    > &
+      Schema.Attribute.Private;
+    pdf_file: Schema.Attribute.Media<'files'> & Schema.Attribute.Required;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    version_label: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 export interface ApiCompanyValueCompanyValue
   extends Struct.CollectionTypeSchema {
   collectionName: 'company_values';
@@ -1454,6 +1486,7 @@ declare module '@strapi/strapi' {
       'api::benefit.benefit': ApiBenefitBenefit;
       'api::blog-post.blog-post': ApiBlogPostBlogPost;
       'api::careers-page.careers-page': ApiCareersPageCareersPage;
+      'api::catalog.catalog': ApiCatalogCatalog;
       'api::company-value.company-value': ApiCompanyValueCompanyValue;
       'api::contact-info.contact-info': ApiContactInfoContactInfo;
       'api::get-started-step.get-started-step': ApiGetStartedStepGetStartedStep;
