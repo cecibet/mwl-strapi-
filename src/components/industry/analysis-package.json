@@ -22,6 +22,9 @@
     "turnaround_time": {
       "type": "string"
     },
+    "sample_size": {
+      "type": "string"
+    },
     "analyses": {
       "type": "component",
       "repeatable": true,
