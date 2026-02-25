@@ -25,6 +25,9 @@
     "sample_size": {
       "type": "string"
     },
+    "section": {
+      "type": "string"
+    },
     "analyses": {
       "type": "component",
       "repeatable": true,

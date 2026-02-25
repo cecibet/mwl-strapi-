@@ -12,6 +12,8 @@ export interface IndustryAnalysisPackage extends Struct.ComponentSchema {
     name: Schema.Attribute.String & Schema.Attribute.Required;
     price_with_rec: Schema.Attribute.String;
     price_without_rec: Schema.Attribute.String;
+    sample_size: Schema.Attribute.String;
+    section: Schema.Attribute.String;
     turnaround_time: Schema.Attribute.String;
   };
 }
