@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_industry_table_sections",
+  "info": {
+    "displayName": "Table Section",
+    "icon": "table"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "note": {
+      "type": "text"
+    },
+    "content": {
+      "type": "richtext"
+    }
+  }
+}

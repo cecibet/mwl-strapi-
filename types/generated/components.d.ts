@@ -18,6 +18,19 @@ export interface IndustryAnalysisPackage extends Struct.ComponentSchema {
   };
 }
 
+export interface IndustryTableSection extends Struct.ComponentSchema {
+  collectionName: 'components_industry_table_sections';
+  info: {
+    displayName: 'Table Section';
+    icon: 'table';
+  };
+  attributes: {
+    title: Schema.Attribute.String;
+    note: Schema.Attribute.Text;
+    content: Schema.Attribute.RichText;
+  };
+}
+
 export interface SharedBulletItem extends Struct.ComponentSchema {
   collectionName: 'components_shared_bullet_items';
   info: {
@@ -71,6 +84,7 @@ declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'industry.analysis-package': IndustryAnalysisPackage;
+      'industry.table-section': IndustryTableSection;
       'shared.bullet-item': SharedBulletItem;
       'shared.contact-cta': SharedContactCta;
       'shared.file-link': SharedFileLink;

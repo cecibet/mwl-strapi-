@@ -822,6 +822,7 @@ export interface ApiIndustryIndustry extends Struct.CollectionTypeSchema {
     shipping_address: Schema.Attribute.Text;
     slug: Schema.Attribute.UID<'name'> & Schema.Attribute.Required;
     submittal_forms: Schema.Attribute.Component<'shared.file-link', true>;
+    table_sections: Schema.Attribute.Component<'industry.table-section', true>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

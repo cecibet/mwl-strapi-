@@ -65,6 +65,11 @@
     "shipping_address": {
       "type": "text"
     },
+    "table_sections": {
+      "type": "component",
+      "repeatable": true,
+      "component": "industry.table-section"
+    },
     "catalog_url": {
       "type": "string"
     },
