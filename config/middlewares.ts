@@ -13,8 +13,8 @@ const config = ({ env }: Core.Config.Shared.ConfigParams): Core.Config.Middlewar
       name: 'strapi::cors',
       config: {
         origin: (ctx) => {
-          const requestOrigin = ctx.request.header.origin;
-          if (!requestOrigin) return false;
+          const requestOrigin = ctx.get('Origin');
+          if (!requestOrigin) return '';
 
           // 1. Exact match against CORS_ORIGINS
           if (allowedOrigins.includes(requestOrigin)) return requestOrigin;
@@ -28,7 +28,7 @@ const config = ({ env }: Core.Config.Shared.ConfigParams): Core.Config.Middlewar
             if (regex.test(requestOrigin)) return requestOrigin;
           }
 
-          return false;
+          return '';
         },
         methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS'],
         headers: ['Content-Type', 'Authorization', 'Origin', 'Accept'],
