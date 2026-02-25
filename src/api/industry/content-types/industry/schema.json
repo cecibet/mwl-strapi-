@@ -39,11 +39,6 @@
       "repeatable": true,
       "component": "shared.bullet-item"
     },
-    "analysis_packages": {
-      "type": "component",
-      "repeatable": true,
-      "component": "industry.analysis-package"
-    },
     "submittal_forms": {
       "type": "component",
       "repeatable": true,
@@ -53,11 +48,6 @@
       "type": "component",
       "repeatable": true,
       "component": "shared.file-link"
-    },
-    "contact_cta": {
-      "type": "component",
-      "repeatable": false,
-      "component": "shared.contact-cta"
     },
     "sample_amount_notes": {
       "type": "richtext"

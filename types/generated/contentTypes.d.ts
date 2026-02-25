@@ -794,12 +794,7 @@ export interface ApiIndustryIndustry extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    analysis_packages: Schema.Attribute.Component<
-      'industry.analysis-package',
-      true
-    >;
     catalog_url: Schema.Attribute.String;
-    contact_cta: Schema.Attribute.Component<'shared.contact-cta', false>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

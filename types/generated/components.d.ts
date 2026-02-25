@@ -28,6 +28,7 @@ export interface IndustryTableSection extends Struct.ComponentSchema {
     title: Schema.Attribute.String;
     note: Schema.Attribute.Text;
     content: Schema.Attribute.Text;
+    clarifications: Schema.Attribute.Text;
   };
 }
 
