@@ -813,6 +813,7 @@ export interface ApiIndustryIndustry extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     name: Schema.Attribute.String & Schema.Attribute.Required;
+    page_image: Schema.Attribute.Media<'images'>;
     popular_analyses: Schema.Attribute.Component<'shared.bullet-item', true>;
     publishedAt: Schema.Attribute.DateTime;
     sample_amount_notes: Schema.Attribute.RichText;
