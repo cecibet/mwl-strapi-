@@ -23,51 +23,63 @@
     "hero_image": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": ["images"],
+      "description": "Banner image shown at the top of the industry page"
     },
     "page_image": {
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": ["images"],
+      "description": "Thumbnail used in industry listing cards"
     },
     "intro_text": {
-      "type": "richtext"
+      "type": "richtext",
+      "description": "Opening paragraph(s) shown below the image"
     },
     "popular_analyses": {
       "type": "component",
       "repeatable": true,
-      "component": "shared.bullet-item"
+      "component": "shared.bullet-item",
+      "description": "Bullet list of commonly requested tests for this industry"
     },
     "submittal_forms": {
       "type": "component",
       "repeatable": true,
-      "component": "shared.file-link"
+      "component": "shared.file-link",
+      "description": "PDF forms customers fill out before submitting samples"
     },
     "guides_resources": {
       "type": "component",
       "repeatable": true,
-      "component": "shared.file-link"
+      "component": "shared.file-link",
+      "description": "Sampling guides, product sheets, and other reference documents"
     },
     "sample_amount_notes": {
-      "type": "richtext"
+      "type": "richtext",
+      "description": "Notes about required sample quantities"
     },
     "shipping_address": {
-      "type": "text"
+      "type": "text",
+      "description": "Mailing address customers should use to ship samples for this industry"
     },
     "table_sections": {
       "type": "component",
       "repeatable": true,
-      "component": "industry.table-section"
+      "component": "industry.table-section",
+      "description": "Pricing/analysis tables. Each section has a title, optional note, a markdown table, and footnotes."
     },
     "catalog_url": {
-      "type": "string"
+      "type": "string",
+      "description": "URL to the downloadable PDF catalog for this industry"
     },
     "seo_title": {
-      "type": "string"
+      "type": "string",
+      "description": "Page title shown in browser tab and search engine results (50-60 chars ideal)"
     },
     "seo_description": {
-      "type": "text"
+      "type": "text",
+      "description": "Meta description for search engines (120-160 chars ideal)"
     }
   }
 }

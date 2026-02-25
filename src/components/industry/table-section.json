@@ -7,16 +7,20 @@
   "options": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "description": "Heading displayed above the table (e.g. \"Recommended Soil Testing Packages\")"
     },
     "note": {
-      "type": "text"
+      "type": "text",
+      "description": "Optional introductory sentence shown between the heading and the table"
     },
     "content": {
-      "type": "text"
+      "type": "text",
+      "description": "Markdown table. Use GFM pipe syntax: | Col1 | Col2 |. Escape | inside cells as \\|"
     },
     "clarifications": {
-      "type": "text"
+      "type": "text",
+      "description": "Footnotes shown below the table (e.g. * = rush fee applies). One per line."
     }
   }
 }
