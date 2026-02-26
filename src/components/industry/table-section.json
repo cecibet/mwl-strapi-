@@ -8,19 +8,19 @@
   "attributes": {
     "title": {
       "type": "string",
-      "description": "Heading displayed above the table (e.g. \"Recommended Soil Testing Packages\")"
+      "placeholder": "Heading displayed above the table (e.g. \"Recommended Soil Testing Packages\")"
     },
     "note": {
       "type": "text",
-      "description": "Optional introductory sentence shown between the heading and the table"
+      "placeholder": "Optional introductory sentence shown between the heading and the table"
     },
     "content": {
       "type": "text",
-      "description": "Markdown table. Use GFM pipe syntax: | Col1 | Col2 |. Escape | inside cells as \\|"
+      "placeholder": "Markdown table. Use GFM pipe syntax: | Col1 | Col2 |. Escape | inside cells as \\|"
     },
     "clarifications": {
       "type": "text",
-      "description": "Footnotes shown below the table (e.g. * = rush fee applies). One per line."
+      "placeholder": "Footnotes shown below the table (e.g. * = rush fee applies). One per line."
     }
   }
 }
