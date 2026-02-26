@@ -27,7 +27,7 @@ export interface IndustryTableSection extends Struct.ComponentSchema {
   attributes: {
     title: Schema.Attribute.String;
     note: Schema.Attribute.Text;
-    content: Schema.Attribute.Text;
+    content: Schema.Attribute.CustomField<'plugin::table-field.table'>;
     clarifications: Schema.Attribute.Text;
   };
 }

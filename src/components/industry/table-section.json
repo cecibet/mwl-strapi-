@@ -15,8 +15,8 @@
       "placeholder": "Optional introductory sentence shown between the heading and the table"
     },
     "content": {
-      "type": "text",
-      "placeholder": "Markdown table. Use GFM pipe syntax: | Col1 | Col2 |. Escape | inside cells as \\|"
+      "type": "customField",
+      "customField": "plugin::table-field.table"
     },
     "clarifications": {
       "type": "text",

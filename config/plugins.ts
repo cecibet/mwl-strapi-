@@ -31,9 +31,11 @@ const config = ({ env }: Core.Config.Shared.ConfigParams): Core.Config.Plugin =>
             table_titles: entry.table_sections
               ?.map((s: { title?: string }) => s.title ?? '').join(' ') ?? '',
             table_content: entry.table_sections
-              ?.map((s: { note?: string; content?: string; clarifications?: string }) =>
-                [s.note, s.content, s.clarifications].filter(Boolean).join(' ')
-              ).join(' ') ?? '',
+              ?.map((s: { note?: string; content?: { columns?: Array<{ label: string }>; rows?: Array<Array<string>> }; clarifications?: string }) => {
+                const headers = s.content?.columns?.map(c => c.label).join(' ') ?? '';
+                const rows = s.content?.rows?.map(r => r.join(' ')).join(' ') ?? '';
+                return [s.note, headers, rows, s.clarifications].filter(Boolean).join(' ');
+              }).join(' ') ?? '',
           };
         },
         settings: {
