@@ -570,7 +570,7 @@ export interface ApiCertificationsCertifications extends Struct.SingleTypeSchema
   collectionName: 'certifications';
   info: {
     displayName: 'Certifications';
-    pluralName: 'certifications';
+    pluralName: 'certifications-pages';
     singularName: 'certifications';
   };
   options: {
