@@ -566,6 +566,28 @@ export interface ApiBlogPostBlogPost extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiCertificationsCertifications extends Struct.SingleTypeSchema {
+  collectionName: 'certifications';
+  info: {
+    displayName: 'Certifications';
+    pluralName: 'certifications';
+    singularName: 'certifications';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    intro_text: Schema.Attribute.RichText;
+    accreditation_url: Schema.Attribute.String;
+    participations_text: Schema.Attribute.RichText;
+    createdAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    publishedAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> & Schema.Attribute.Private;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> & Schema.Attribute.Private;
+  };
+}
+
 export interface ApiCareersPageCareersPage extends Struct.SingleTypeSchema {
   collectionName: 'careers_page';
   info: {
@@ -1483,6 +1505,7 @@ declare module '@strapi/strapi' {
       'api::benefit.benefit': ApiBenefitBenefit;
       'api::blog-post.blog-post': ApiBlogPostBlogPost;
       'api::careers-page.careers-page': ApiCareersPageCareersPage;
+      'api::certifications.certifications': ApiCertificationsCertifications;
       'api::catalog.catalog': ApiCatalogCatalog;
       'api::company-value.company-value': ApiCompanyValueCompanyValue;
       'api::contact-info.contact-info': ApiContactInfoContactInfo;
