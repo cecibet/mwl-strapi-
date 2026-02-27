@@ -566,6 +566,31 @@ export interface ApiBlogPostBlogPost extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiCampusTourCampusTour extends Struct.SingleTypeSchema {
+  collectionName: 'campus_tour';
+  info: {
+    displayName: 'Campus Tour';
+    pluralName: 'campus-tours';
+    singularName: 'campus-tour';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Schema.Attribute.String;
+    body: Schema.Attribute.RichText;
+    gallery: Schema.Attribute.Media<'images', true>;
+    maps_embed_url: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    publishedAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiCertificationsCertifications extends Struct.SingleTypeSchema {
   collectionName: 'certifications';
   info: {
@@ -1502,6 +1527,7 @@ declare module '@strapi/strapi' {
       'admin::user': AdminUser;
       'api::about-us-page.about-us-page': ApiAboutUsPageAboutUsPage;
       'api::announcement.announcement': ApiAnnouncementAnnouncement;
+      'api::campus-tour.campus-tour': ApiCampusTourCampusTour;
       'api::benefit.benefit': ApiBenefitBenefit;
       'api::blog-post.blog-post': ApiBlogPostBlogPost;
       'api::careers-page.careers-page': ApiCareersPageCareersPage;

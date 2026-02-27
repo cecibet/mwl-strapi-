@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "campus_tour",
+  "info": {
+    "singularName": "campus-tour",
+    "pluralName": "campus-tours",
+    "displayName": "Campus Tour"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "gallery": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": ["images"]
+    },
+    "maps_embed_url": {
+      "type": "string"
+    }
+  }
+}
