@@ -580,7 +580,7 @@ export interface ApiCampusTourCampusTour extends Struct.SingleTypeSchema {
     title: Schema.Attribute.String;
     body: Schema.Attribute.RichText;
     gallery: Schema.Attribute.Media<'images', true>;
-    maps_embed_url: Schema.Attribute.String;
+    maps_embed_url: Schema.Attribute.Text;
     createdAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     publishedAt: Schema.Attribute.DateTime;

@@ -23,7 +23,7 @@
       "allowedTypes": ["images"]
     },
     "maps_embed_url": {
-      "type": "string"
+      "type": "text"
     }
   }
 }
