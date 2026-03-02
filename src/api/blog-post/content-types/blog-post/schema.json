@@ -29,7 +29,8 @@
       "type": "text"
     },
     "body": {
-      "type": "richtext"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor"
     },
     "published_date": {
       "type": "date"

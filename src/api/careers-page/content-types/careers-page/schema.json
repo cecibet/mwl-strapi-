@@ -17,10 +17,12 @@
       "allowedTypes": ["images"]
     },
     "mission_text": {
-      "type": "richtext"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor"
     },
     "vision_text": {
-      "type": "richtext"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor"
     },
     "values_intro": {
       "type": "text"

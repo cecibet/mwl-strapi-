@@ -12,13 +12,15 @@
   "pluginOptions": {},
   "attributes": {
     "intro_text": {
-      "type": "richtext"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor"
     },
     "accreditation_url": {
       "type": "string"
     },
     "participations_text": {
-      "type": "richtext"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor"
     }
   }
 }

@@ -21,7 +21,8 @@
       "type": "string"
     },
     "about_text": {
-      "type": "richtext"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor"
     },
     "announcements": {
       "type": "relation",

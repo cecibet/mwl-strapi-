@@ -31,7 +31,8 @@
       "default": false
     },
     "bio": {
-      "type": "richtext"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor"
     },
     "sort_order": {
       "type": "integer",

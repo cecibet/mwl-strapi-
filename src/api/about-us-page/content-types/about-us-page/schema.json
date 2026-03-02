@@ -17,10 +17,12 @@
       "allowedTypes": ["images"]
     },
     "history_text": {
-      "type": "richtext"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor"
     },
     "our_people_text": {
-      "type": "richtext"
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor"
     },
     "history_images": {
       "type": "media",
