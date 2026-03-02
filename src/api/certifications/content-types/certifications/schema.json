@@ -13,14 +13,16 @@
   "attributes": {
     "intro_text": {
       "type": "customField",
-      "customField": "plugin::ckeditor5.CKEditor"
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": { "preset": "defaultHtml" }
     },
     "accreditation_url": {
       "type": "string"
     },
     "participations_text": {
       "type": "customField",
-      "customField": "plugin::ckeditor5.CKEditor"
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": { "preset": "defaultHtml" }
     }
   }
 }

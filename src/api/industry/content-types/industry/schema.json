@@ -36,6 +36,7 @@
     "intro_text": {
       "type": "customField",
       "customField": "plugin::ckeditor5.CKEditor",
+      "options": { "preset": "defaultHtml" },
       "placeholder": "Opening paragraph(s) shown below the image"
     },
     "popular_analyses": {
@@ -59,6 +60,7 @@
     "sample_amount_notes": {
       "type": "customField",
       "customField": "plugin::ckeditor5.CKEditor",
+      "options": { "preset": "defaultHtml" },
       "placeholder": "Notes about required sample quantities"
     },
     "shipping_address": {

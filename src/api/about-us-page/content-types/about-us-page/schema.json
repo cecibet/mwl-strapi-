@@ -18,11 +18,13 @@
     },
     "history_text": {
       "type": "customField",
-      "customField": "plugin::ckeditor5.CKEditor"
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": { "preset": "defaultHtml" }
     },
     "our_people_text": {
       "type": "customField",
-      "customField": "plugin::ckeditor5.CKEditor"
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": { "preset": "defaultHtml" }
     },
     "history_images": {
       "type": "media",

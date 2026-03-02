@@ -18,11 +18,13 @@
     },
     "mission_text": {
       "type": "customField",
-      "customField": "plugin::ckeditor5.CKEditor"
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": { "preset": "defaultHtml" }
     },
     "vision_text": {
       "type": "customField",
-      "customField": "plugin::ckeditor5.CKEditor"
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": { "preset": "defaultHtml" }
     },
     "values_intro": {
       "type": "text"
