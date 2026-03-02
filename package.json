@@ -16,6 +16,7 @@
     "tunnel": "npx untun@latest tunnel http://localhost:1337"
   },
   "dependencies": {
+    "@_sh/strapi-plugin-ckeditor": "^7.1.0",
     "@sensinum/strapi-table-field": "^1.0.1",
     "@strapi/plugin-cloud": "5.36.1",
     "@strapi/plugin-users-permissions": "5.36.1",
