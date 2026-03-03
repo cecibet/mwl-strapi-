@@ -35,8 +35,7 @@
     },
     "intro_text": {
       "type": "customField",
-      "customField": "plugin::ckeditor5.CKEditor",
-      "options": { "preset": "defaultHtml" },
+      "customField": "plugin::tinymce.tinymce",
       "placeholder": "Opening paragraph(s) shown below the image"
     },
     "popular_analyses": {
