@@ -1,4 +1,6 @@
 import type { StrapiApp } from '@strapi/strapi/admin';
+import "strapi-plugin-lexical/dist/style.css";
+import "prismjs";
 
 export default {
   config: {

@@ -16,7 +16,7 @@
     },
     "content": {
       "type": "customField",
-      "customField": "plugin::table-field.table"
+      "customField": "plugin::lexical.lexical"
     },
     "clarifications": {
       "type": "text",

@@ -9,6 +9,10 @@ const config = ({ env }: Core.Config.Shared.ConfigParams): Core.Config.Plugin =>
     enabled: true,
   },
 
+  lexical: {
+    enabled: true,
+  },
+
   meilisearch: {
     config: {
       host: env('MEILISEARCH_HOST', ''),
