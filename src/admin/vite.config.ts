@@ -1,10 +1,10 @@
 import { mergeConfig, type UserConfig } from 'vite';
-import { pluginPrismjs } from 'vite-plugin-prismjs';
+import { prismjsPlugin } from 'vite-plugin-prismjs';
 
 export default (config: UserConfig) => {
   return mergeConfig(config, {
     plugins: [
-      pluginPrismjs({
+      prismjsPlugin({
         languages: ['javascript', 'css', 'markup', 'bash', 'json'],
       }),
     ],
