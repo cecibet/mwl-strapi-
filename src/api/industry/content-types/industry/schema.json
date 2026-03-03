@@ -35,7 +35,7 @@
     },
     "intro_text": {
       "type": "customField",
-      "customField": "plugin::tinymce.tinymce",
+      "customField": "plugin::tiptap-editor.tiptap-content",
       "placeholder": "Opening paragraph(s) shown below the image"
     },
     "popular_analyses": {

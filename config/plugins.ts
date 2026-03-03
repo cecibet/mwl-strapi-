@@ -13,7 +13,7 @@ const config = ({ env }: Core.Config.Shared.ConfigParams): Core.Config.Plugin =>
     enabled: true,
   },
 
-  tinymce: {
+  'tiptap-editor': {
     enabled: true,
   },
 
