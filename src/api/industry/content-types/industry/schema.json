@@ -39,12 +39,6 @@
       "options": { "preset": "defaultHtml" },
       "placeholder": "Opening paragraph(s) shown below the image"
     },
-    "popular_analyses": {
-      "type": "component",
-      "repeatable": true,
-      "component": "shared.bullet-item",
-      "placeholder": "Bullet list of commonly requested tests for this industry"
-    },
     "submittal_forms": {
       "type": "component",
       "repeatable": true,
@@ -66,16 +60,6 @@
     "shipping_address": {
       "type": "text",
       "placeholder": "Mailing address customers should use to ship samples for this industry"
-    },
-    "table_sections": {
-      "type": "component",
-      "repeatable": true,
-      "component": "industry.table-section",
-      "placeholder": "Pricing/analysis tables. Each section has a title, optional note, a markdown table, and footnotes."
-    },
-    "catalog_url": {
-      "type": "string",
-      "placeholder": "URL to the downloadable PDF catalog for this industry"
     },
     "seo_title": {
       "type": "string",

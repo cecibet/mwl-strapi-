@@ -18,34 +18,29 @@ const config = ({ env }: Core.Config.Shared.ConfigParams): Core.Config.Plugin =>
         indexName: 'industries',
         entriesQuery: {
           populate: {
-            popular_analyses: true,
-            table_sections: true,
+            submittal_forms: true,
+            guides_resources: true,
           },
         },
         transformEntry({ entry }) {
+          const stripHtml = (html?: string) =>
+            html ? html.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim() : '';
           return {
             id: entry.id,
             name: entry.name,
             slug: entry.slug,
-            seo_title: entry.seo_title ?? '',
-            shipping_address: entry.shipping_address ?? '',
-            catalog_url: entry.catalog_url ?? '',
-            popular_analyses_text: entry.popular_analyses
-              ?.map((a: { text: string }) => a.text).join(' ') ?? '',
-            table_titles: entry.table_sections
-              ?.map((s: { title?: string }) => s.title ?? '').join(' ') ?? '',
-            table_content: entry.table_sections
-              ?.map((s: { note?: string; content?: { columns?: Array<{ label: string }>; rows?: Array<Array<string>> }; clarifications?: string }) => {
-                const headers = s.content?.columns?.map(c => c.label).join(' ') ?? '';
-                const rows = s.content?.rows?.map(r => r.join(' ')).join(' ') ?? '';
-                return [s.note, headers, rows, s.clarifications].filter(Boolean).join(' ');
-              }).join(' ') ?? '',
+            intro_text: stripHtml(entry.intro_text),
+            submittal_forms_text: entry.submittal_forms
+              ?.map((f: { label?: string }) => f.label ?? '').join(' ') ?? '',
+            guides_resources_text: entry.guides_resources
+              ?.map((f: { label?: string }) => f.label ?? '').join(' ') ?? '',
+            sample_amount_notes: stripHtml(entry.sample_amount_notes),
           };
         },
         settings: {
           searchableAttributes: [
-            'name', 'seo_title', 'shipping_address', 'catalog_url',
-            'popular_analyses_text', 'table_titles', 'table_content',
+            'name', 'intro_text', 'submittal_forms_text',
+            'guides_resources_text', 'sample_amount_notes',
           ],
           displayedAttributes: ['id', 'name', 'slug'],
         },
@@ -75,10 +70,17 @@ const config = ({ env }: Core.Config.Shared.ConfigParams): Core.Config.Plugin =>
       laboratory: {
         indexName: 'laboratories',
         transformEntry({ entry }) {
-          return { id: entry.id, name: entry.name, slug: entry.slug };
+          const stripHtml = (html?: string) =>
+            html ? html.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim() : '';
+          return {
+            id: entry.id,
+            name: entry.name,
+            slug: entry.slug,
+            description: stripHtml(entry.description),
+          };
         },
         settings: {
-          searchableAttributes: ['name'],
+          searchableAttributes: ['name', 'description'],
           displayedAttributes: ['id', 'name', 'slug'],
         },
       },

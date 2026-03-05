@@ -30,21 +30,6 @@
       "customField": "plugin::ckeditor5.CKEditor",
       "options": { "preset": "defaultHtml" }
     },
-    "services_offered": {
-      "type": "component",
-      "repeatable": true,
-      "component": "shared.bullet-item"
-    },
-    "who_we_support": {
-      "type": "component",
-      "repeatable": true,
-      "component": "shared.bullet-item"
-    },
-    "highlights": {
-      "type": "component",
-      "repeatable": true,
-      "component": "shared.bullet-item"
-    },
     "related_industries": {
       "type": "relation",
       "relation": "manyToMany",
