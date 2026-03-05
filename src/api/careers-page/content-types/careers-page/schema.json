@@ -35,15 +35,5 @@
     "jobs_external_url": {
       "type": "string"
     },
-    "values": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::company-value.company-value"
-    },
-    "benefits": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::benefit.benefit"
-    }
   }
 }
