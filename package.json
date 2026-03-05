@@ -17,7 +17,6 @@
   },
   "dependencies": {
     "@_sh/strapi-plugin-ckeditor": "^7.1.0",
-    "@samemichaeltadele/tiptap-editor": "^0.0.10",
     "@sensinum/strapi-table-field": "^1.0.1",
     "@strapi/plugin-cloud": "5.36.1",
     "@strapi/plugin-users-permissions": "5.36.1",
@@ -27,7 +26,6 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
-    "strapi-plugin-lexical": "^0.3.0",
     "strapi-plugin-meilisearch": "^0.14.0",
     "styled-components": "^6.0.0"
   },
@@ -35,8 +33,7 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "typescript": "^5",
-    "vite-plugin-prismjs": "^0.0.11"
+    "typescript": "^5"
   },
   "engines": {
     "node": ">=20.0.0 <=24.x.x",

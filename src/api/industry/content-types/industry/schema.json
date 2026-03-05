@@ -35,7 +35,8 @@
     },
     "intro_text": {
       "type": "customField",
-      "customField": "plugin::tiptap-editor.tiptap-content",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": { "preset": "defaultHtml" },
       "placeholder": "Opening paragraph(s) shown below the image"
     },
     "popular_analyses": {
