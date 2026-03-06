@@ -45,6 +45,16 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::industry.industry"
+    },
+    "author": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::blog-author.blog-author"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::blog-category.blog-category"
     }
   }
 }

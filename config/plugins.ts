@@ -85,22 +85,6 @@ const config = ({ env }: Core.Config.Shared.ConfigParams): Core.Config.Plugin =>
         },
       },
 
-      resource: {
-        indexName: 'resources',
-        transformEntry({ entry }) {
-          return {
-            id: entry.id,
-            title: entry.title,
-            description: entry.description ?? '',
-            resource_type: entry.resource_type ?? '',
-          };
-        },
-        settings: {
-          searchableAttributes: ['title', 'description', 'resource_type'],
-          displayedAttributes: ['id', 'title', 'description', 'resource_type'],
-        },
-      },
-
       video: {
         indexName: 'videos',
         transformEntry({ entry }) {
@@ -117,20 +101,6 @@ const config = ({ env }: Core.Config.Shared.ConfigParams): Core.Config.Plugin =>
         },
       },
 
-      'team-member': {
-        indexName: 'team-members',
-        transformEntry({ entry }) {
-          return {
-            id: entry.id,
-            name: entry.name,
-            title: entry.title ?? '',
-          };
-        },
-        settings: {
-          searchableAttributes: ['name', 'title'],
-          displayedAttributes: ['id', 'name', 'title'],
-        },
-      },
     },
   },
 });

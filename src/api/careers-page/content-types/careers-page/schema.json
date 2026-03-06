@@ -16,24 +16,34 @@
       "multiple": false,
       "allowedTypes": ["images"]
     },
-    "mission_text": {
-      "type": "customField",
-      "customField": "plugin::ckeditor5.CKEditor",
-      "options": { "preset": "defaultHtml" }
-    },
-    "vision_text": {
-      "type": "customField",
-      "customField": "plugin::ckeditor5.CKEditor",
-      "options": { "preset": "defaultHtml" }
-    },
-    "values_intro": {
-      "type": "text"
-    },
-    "benefits_intro": {
-      "type": "text"
-    },
     "jobs_external_url": {
       "type": "string"
     },
+    "mission_vision": {
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": { "preset": "defaultHtml" },
+      "placeholder": "Unified mission and vision statement"
+    },
+    "values": {
+      "type": "component",
+      "repeatable": true,
+      "component": "careers.value-item"
+    },
+    "benefits_intro": {
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": { "preset": "defaultHtml" }
+    },
+    "benefits": {
+      "type": "component",
+      "repeatable": true,
+      "component": "careers.benefit-item"
+    },
+    "laboratory_tour_text": {
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": { "preset": "defaultHtml" }
+    }
   }
 }

@@ -1,0 +1,10 @@
+{
+  "collectionName": "components_careers_value_items",
+  "info": { "displayName": "Value Item", "icon": "star" },
+  "options": {},
+  "attributes": {
+    "image": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "title": { "type": "string", "required": true },
+    "content": { "type": "text" }
+  }
+}

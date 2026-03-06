@@ -1,0 +1,9 @@
+{
+  "collectionName": "components_careers_benefit_items",
+  "info": { "displayName": "Benefit Item", "icon": "heart" },
+  "options": {},
+  "attributes": {
+    "image": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "text": { "type": "string", "required": true }
+  }
+}

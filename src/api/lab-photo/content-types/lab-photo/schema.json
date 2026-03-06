@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lab_photos",
+  "info": {
+    "singularName": "lab-photo",
+    "pluralName": "lab-photos",
+    "displayName": "Lab Photo"
+  },
+  "options": { "draftAndPublish": false },
+  "pluginOptions": {},
+  "attributes": {
+    "image": { "type": "media", "multiple": false, "allowedTypes": ["images"], "required": true },
+    "url": { "type": "string", "placeholder": "Link destination when this image is clicked in the carousel (e.g. /laboratories/environmental)" },
+    "caption": { "type": "string" },
+    "sort_order": { "type": "integer", "default": 0 }
+  }
+}
